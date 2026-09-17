@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Abhishek Numerology | Name Calculator</title>
+
+    <link rel="stylesheet"
+          href="/css/style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <span class="logo-icon">✦</span>
+
+        <span>Abhishek NUMEROLOGY</span>
+
+    </div>
+
+    <nav>
+
+        <a href="/">Home</a>
+
+        <a href="#about">About Numerology</a>
+
+        <a href="#report">Your Report</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="stars">
+
+            ✦　⋆　✧　⋆　✦
+
+        </div>
+
+        <p class="eyebrow">
+
+            ✦ DISCOVER YOUR IDENTITY ✦
+
+        </p>
+
+        <h1>
+
+            Unlock the Power
+
+            <br>
+
+            <span>of Your Name</span>
+
+        </h1>
+
+        <p class="hero-text">
+
+            Explore the mystical world of numerology
+
+            and discover the hidden meaning behind your name.
+
+        </p>
+
+    </section>
+
+
+    <!-- ================= CALCULATOR SECTION ================= -->
+
+    <section class="calculator-section">
+
+        <div class="calculator-card">
+
+
+            <!-- Card Header -->
+
+            <div class="card-heading">
+
+                <div class="moon-icon">
+
+                    ☾
+
+                </div>
+
+                <div>
+
+                    <h2>Name Numerology</h2>
+
+                    <p>
+
+                        Enter your name to reveal
+
+                        your numerology numbers.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Calculator Form -->
+
+            <form action="/calculate"
+
+                  method="post"
+
+                  class="numerology-form">
+
+
+                <label for="name">
+
+                    Full Name
+
+                </label>
+
+
+                <input
+
+                        type="text"
+
+                        id="name"
+
+                        name="name"
+
+                        placeholder="Enter your full name"
+
+                        required
+
+                        minlength="2"
+
+                >
+
+
+                <button type="submit">
+
+                    Calculate My Numerology
+
+                    <span>✦</span>
+
+                </button>
+
+
+            </form>
+
+
+            <p class="privacy-text">
+
+                ✧ Enter your name to calculate your
+
+                numerology numbers.
+
+            </p>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REPORT SECTION ================= -->
+
+    <section class="report-section"
+
+             id="report"
+
+             th:if="${result != null}">
+
+
+        <p class="eyebrow">
+
+            ✦ YOUR REPORT ✦
+
+        </p>
+
+
+        <h2>
+
+            Your Numerology Results
+
+        </h2>
+
+
+        <p class="report-name">
+
+            Name:
+
+            <strong th:text="${result.name}">
+
+            </strong>
+
+        </p>
+
+
+        <div class="numbers-grid">
+
+
+            <!-- Destiny Number -->
+
+            <div class="number-card">
+
+                <div class="number-icon">
+
+                    ☀
+
+                </div>
+
+
+                <h3>
+
+                    Destiny Number
+
+                </h3>
+
+
+                <div class="number"
+
+                     th:text="${result.destinyNumber}">
+
+                </div>
+
+
+                <p>
+
+                    Your name's numerical vibration.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Soul Urge Number -->
+
+            <div class="number-card">
+
+                <div class="number-icon">
+
+                    ☾
+
+                </div>
+
+
+                <h3>
+
+                    Soul Urge Number
+
+                </h3>
+
+
+                <div class="number"
+
+                     th:text="${result.soulUrgeNumber}">
+
+                </div>
+
+
+                <p>
+
+                    Your inner desires and motivations.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Personality Number -->
+
+            <div class="number-card">
+
+                <div class="number-icon">
+
+                    ✧
+
+                </div>
+
+
+                <h3>
+
+                    Personality Number
+
+                </h3>
+
+
+                <div class="number"
+
+                     th:text="${result.personalityNumber}">
+
+                </div>
+
+
+                <p>
+
+                    How your name represents you.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Report Details -->
+
+        <div class="report-details">
+
+
+            <h3>
+
+                Understanding Your Numbers
+
+            </h3>
+
+
+            <p>
+
+                Your numerology numbers are calculated
+
+                using the letters in your name.
+
+                Each number has a symbolic meaning
+
+                in numerology.
+
+            </p>
+
+
+            <button
+
+                    type="button"
+
+                    onclick="window.print()"
+
+                    class="print-button">
+
+                Print Your Report
+
+            </button>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about-section"
+
+             id="about">
+
+
+        <p class="eyebrow">
+
+            ✦ THE ART OF NUMEROLOGY ✦
+
+        </p>
+
+
+        <h2>
+
+            What Your Name Reveals
+
+        </h2>
+
+
+        <p>
+
+            Numerology is a symbolic practice that explores
+
+            the meaning of numbers associated with names.
+
+            Discover the numerical patterns within your name
+
+            and explore their traditional interpretations.
+
+        </p>
+
+
+    </section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+
+        © 2026 Abhishek Numerology
+
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
