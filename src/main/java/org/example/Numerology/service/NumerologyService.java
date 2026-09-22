@@ -1,25 +1,71 @@
 package org.example.Numerology.service;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.Numerology.model.NumerologyResult;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Map;
 
 @Service
 public class NumerologyService {
+
+    private final Map<String, NumerologyData> numerologyData;
+
+    public NumerologyService(ObjectMapper objectMapper) throws IOException {
+
+        ClassPathResource resource =
+                new ClassPathResource("destiny-numbers.json");
+
+        try (InputStream inputStream = resource.getInputStream()) {
+
+            numerologyData = objectMapper.readValue(
+                    inputStream,
+                    new TypeReference<Map<String, NumerologyData>>() {
+                    }
+            );
+        }
+    }
 
     public NumerologyResult calculate(String name) {
 
         int destiny = calculateNumber(name);
 
-        int soulUrge = calculateVowels(name);
+        /*
+         * Get the information for the calculated
+         * Destiny Number from destiny-numbers.json
+         */
+        NumerologyData data =
+                numerologyData.get(String.valueOf(destiny));
 
-        int personality = calculateConsonants(name);
+        NumerologyResult result = new NumerologyResult();
 
-        return new NumerologyResult(
-                name,
-                destiny,
-                soulUrge,
-                personality
-        );
+        result.setName(name);
+        result.setDestinyNumber(destiny);
+
+        if (data != null) {
+
+            result.setRulingPlanet(
+                    data.getRulingPlanet()
+            );
+
+            result.setContributingPlanets(
+                    data.getContributingPlanets()
+            );
+
+            result.setDescription(
+                    data.getDescription()
+            );
+
+            result.setBusinessDescription(
+                    data.getBusinessDescription()
+            );
+        }
+
+        return result;
     }
 
     private int calculateNumber(String name) {
@@ -31,7 +77,7 @@ public class NumerologyService {
             total += getValue(ch);
         }
 
-        return reduceNumber(total);
+        return total;
     }
 
     private int calculateVowels(String name) {
@@ -46,7 +92,7 @@ public class NumerologyService {
             }
         }
 
-        return reduceNumber(total);
+        return total;
     }
 
     private int calculateConsonants(String name) {
@@ -62,7 +108,7 @@ public class NumerologyService {
             }
         }
 
-        return reduceNumber(total);
+        return total;
     }
 
     private int getValue(char ch) {
@@ -106,5 +152,48 @@ public class NumerologyService {
         }
 
         return number;
+    }
+
+    /*
+     * Represents one entry from destiny-numbers.json
+     */
+    public static class NumerologyData {
+
+        private String rulingPlanet;
+        private String contributingPlanets;
+        private String description;
+        private String businessDescription;
+
+        public String getRulingPlanet() {
+            return rulingPlanet;
+        }
+
+        public void setRulingPlanet(String rulingPlanet) {
+            this.rulingPlanet = rulingPlanet;
+        }
+
+        public String getContributingPlanets() {
+            return contributingPlanets;
+        }
+
+        public void setContributingPlanets(String contributingPlanets) {
+            this.contributingPlanets = contributingPlanets;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public String getBusinessDescription() {
+            return businessDescription;
+        }
+
+        public void setBusinessDescription(String businessDescription) {
+            this.businessDescription = businessDescription;
+        }
     }
 }

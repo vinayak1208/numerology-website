@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en"
       xmlns:th="http://www.thymeleaf.org">
@@ -54,15 +53,11 @@
     <section class="hero">
 
         <div class="stars">
-
             ✦　⋆　✧　⋆　✦
-
         </div>
 
         <p class="eyebrow">
-
             ✦ DISCOVER YOUR IDENTITY ✦
-
         </p>
 
         <h1>
@@ -92,15 +87,12 @@
 
         <div class="calculator-card">
 
-
             <!-- Card Header -->
 
             <div class="card-heading">
 
                 <div class="moon-icon">
-
                     ☾
-
                 </div>
 
                 <div>
@@ -108,11 +100,8 @@
                     <h2>Name Numerology</h2>
 
                     <p>
-
                         Enter your name to reveal
-
                         your numerology numbers.
-
                     </p>
 
                 </div>
@@ -123,35 +112,21 @@
             <!-- Calculator Form -->
 
             <form action="/calculate"
-
                   method="post"
-
                   class="numerology-form">
 
-
                 <label for="name">
-
                     Full Name
-
                 </label>
 
-
                 <input
-
                         type="text"
-
                         id="name"
-
                         name="name"
-
                         placeholder="Enter your full name"
-
                         required
-
                         minlength="2"
-
                 >
-
 
                 <button type="submit">
 
@@ -161,18 +136,15 @@
 
                 </button>
 
-
             </form>
 
 
             <p class="privacy-text">
 
                 ✧ Enter your name to calculate your
-
                 numerology numbers.
 
             </p>
-
 
         </div>
 
@@ -182,23 +154,16 @@
     <!-- ================= REPORT SECTION ================= -->
 
     <section class="report-section"
-
              id="report"
-
              th:if="${result != null}">
 
-
         <p class="eyebrow">
-
             ✦ YOUR REPORT ✦
-
         </p>
 
 
         <h2>
-
             Your Numerology Results
-
         </h2>
 
 
@@ -207,159 +172,111 @@
             Name:
 
             <strong th:text="${result.name}">
-
             </strong>
 
         </p>
 
 
+        <!-- ================= DESTINY NUMBER ================= -->
+
         <div class="numbers-grid">
 
-
-            <!-- Destiny Number -->
-
             <div class="number-card">
 
                 <div class="number-icon">
-
                     ☀
-
                 </div>
 
 
                 <h3>
-
                     Destiny Number
-
                 </h3>
 
 
                 <div class="number"
-
                      th:text="${result.destinyNumber}">
-
                 </div>
-
-
-                <p>
-
-                    Your name's numerical vibration.
-
-                </p>
 
             </div>
-
-
-
-            <!-- Soul Urge Number -->
-
-            <div class="number-card">
-
-                <div class="number-icon">
-
-                    ☾
-
-                </div>
-
-
-                <h3>
-
-                    Soul Urge Number
-
-                </h3>
-
-
-                <div class="number"
-
-                     th:text="${result.soulUrgeNumber}">
-
-                </div>
-
-
-                <p>
-
-                    Your inner desires and motivations.
-
-                </p>
-
-            </div>
-
-
-
-            <!-- Personality Number -->
-
-            <div class="number-card">
-
-                <div class="number-icon">
-
-                    ✧
-
-                </div>
-
-
-                <h3>
-
-                    Personality Number
-
-                </h3>
-
-
-                <div class="number"
-
-                     th:text="${result.personalityNumber}">
-
-                </div>
-
-
-                <p>
-
-                    How your name represents you.
-
-                </p>
-
-            </div>
-
 
         </div>
 
 
-        <!-- Report Details -->
+        <!-- ================= NUMEROLOGY DETAILS ================= -->
 
         <div class="report-details">
 
-
             <h3>
-
-                Understanding Your Numbers
-
+                Understanding Your Destiny Number
             </h3>
 
 
-            <p>
+            <!-- Ruling Planet -->
 
-                Your numerology numbers are calculated
+            <div class="report-item">
 
-                using the letters in your name.
+                <h4>
+                    Ruling Planet
+                </h4>
 
-                Each number has a symbolic meaning
+                <p th:text="${result.rulingPlanet}">
+                </p>
 
-                in numerology.
+            </div>
 
-            </p>
 
+            <!-- Contributing Planets -->
+
+            <div class="report-item">
+
+                <h4>
+                    Contributing Planets
+                </h4>
+
+                <p th:text="${result.contributingPlanets}">
+                </p>
+
+            </div>
+
+
+            <!-- Description -->
+
+            <div class="report-item">
+
+                <h4>
+                    Description
+                </h4>
+
+                <p th:text="${result.description}">
+                </p>
+
+            </div>
+
+
+            <!-- Business Description -->
+
+            <div class="report-item">
+
+                <h4>
+                    Business Description
+                </h4>
+
+                <p th:text="${result.businessDescription}">
+                </p>
+
+            </div>
+
+
+            <!-- Print -->
 
             <button
-
                     type="button"
-
                     onclick="window.print()"
-
                     class="print-button">
 
                 Print Your Report
 
             </button>
-
 
         </div>
 
@@ -370,36 +287,27 @@
     <!-- ================= ABOUT SECTION ================= -->
 
     <section class="about-section"
-
              id="about">
 
-
         <p class="eyebrow">
-
             ✦ THE ART OF NUMEROLOGY ✦
-
         </p>
 
 
         <h2>
-
             What Your Name Reveals
-
         </h2>
 
 
         <p>
 
             Numerology is a symbolic practice that explores
-
             the meaning of numbers associated with names.
 
             Discover the numerical patterns within your name
-
             and explore their traditional interpretations.
 
         </p>
-
 
     </section>
 
@@ -412,9 +320,7 @@
 <footer>
 
     <p>
-
-        © 2026 Abhishek Numerology
-
+        © 2026 Vinayak Kedia (Developer)
     </p>
 
 </footer>
