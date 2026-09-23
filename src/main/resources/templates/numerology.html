@@ -23,11 +23,10 @@
 <header class="navbar">
 
     <div class="logo">
+        <img src="/images/logo.png"
+             alt="Abhishek Numerology Logo">
 
-        <span class="logo-icon">✦</span>
-
-        <span>Abhishek NUMEROLOGY</span>
-
+        <span>ABHISHEK NUMEROLOGY</span>
     </div>
 
     <nav>
@@ -124,6 +123,7 @@
                         id="name"
                         name="name"
                         placeholder="Enter your full name"
+                        th:value="${result != null ? result.name : ''}"
                         required
                         minlength="2"
                 >
@@ -157,6 +157,11 @@
              id="report"
              th:if="${result != null}">
 
+        <div class="report-logo">
+            <img src="/images/logo.png"
+                 alt="Abhishek Numerology">
+        </div>
+
         <p class="eyebrow">
             ✦ YOUR REPORT ✦
         </p>
@@ -177,7 +182,7 @@
         </p>
 
 
-        <!-- ================= DESTINY NUMBER ================= -->
+        <!-- ================= NAME NUMBER ================= -->
 
         <div class="numbers-grid">
 
@@ -189,7 +194,7 @@
 
 
                 <h3>
-                    Destiny Number
+                    Name Number
                 </h3>
 
 
@@ -207,7 +212,7 @@
         <div class="report-details">
 
             <h3>
-                Understanding Your Destiny Number
+                Understanding Your Name Number
             </h3>
 
 

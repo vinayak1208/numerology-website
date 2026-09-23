@@ -1,6 +1,5 @@
-
 /* =====================================================
-   COSMIC NUMEROLOGY WEBSITE
+   RED & BLACK NUMEROLOGY WEBSITE
    Complete CSS
 ===================================================== */
 
@@ -19,31 +18,19 @@
 ===================================================== */
 
 * {
-
     box-sizing: border-box;
-
 }
-
 
 html {
-
     scroll-behavior: smooth;
-
 }
 
-
 body {
-
     margin: 0;
-
     font-family: 'Inter', sans-serif;
-
     color: #ffffff;
-
-    background: #17102d;
-
+    background: #120707;
     min-height: 100vh;
-
 }
 
 
@@ -52,76 +39,47 @@ body {
 ===================================================== */
 
 .navbar {
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     padding: 22px 7%;
 
-    border-bottom: 1px solid #3b2b52;
+    border-bottom: 1px solid #4a1717;
 
-    background: #17102d;
-
+    background: #120707;
 }
-
 
 .logo {
-
     display: flex;
-
     align-items: center;
-
-    gap: 8px;
+    gap: 12px;
 
     font-family: 'Cinzel', serif;
-
     font-size: 18px;
-
     font-weight: 700;
-
     letter-spacing: 1px;
-
 }
 
-
-.logo-icon {
-
-    color: #d8b46a;
-
-    font-size: 25px;
-
+.logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
-
 
 nav {
-
     display: flex;
-
     gap: 28px;
-
 }
-
 
 nav a {
-
-    color: #d7cde4;
-
+    color: #e6caca;
     text-decoration: none;
-
     font-size: 14px;
-
     transition: color 0.3s ease;
-
 }
 
-
 nav a:hover {
-
-    color: #d8b46a;
-
+    color: #ff9b9b;
 }
 
 
@@ -130,75 +88,56 @@ nav a:hover {
 ===================================================== */
 
 .hero {
-
     position: relative;
-
     text-align: center;
 
     padding: 75px 20px 45px;
 
     background:
-
         radial-gradient(
-
             circle at 50% 0%,
-
-            #4b286d 0%,
-
-            #24153f 35%,
-
-            #17102d 75%
-
+            #6b2020 0%,
+            #321010 35%,
+            #120707 75%
         );
 
     overflow: hidden;
-
 }
 
-
 .hero::before {
-
     content: "";
 
     position: absolute;
 
     width: 400px;
-
     height: 400px;
 
     border-radius: 50%;
 
-    background: #8b5bc6;
+    background: #ff5555;
 
     opacity: 0.06;
 
     top: -220px;
-
     left: 50%;
 
     transform: translateX(-50%);
-
 }
 
-
 .stars {
-
     position: relative;
 
-    color: #d8b46a;
+    color: #ffb3b3;
 
     font-size: 23px;
 
     margin-bottom: 25px;
 
     letter-spacing: 4px;
-
 }
 
-
 .eyebrow {
-
-    color: #d8b46a;
+    color: #ffb3b3;
 
     font-size: 12px;
 
@@ -207,12 +146,9 @@ nav a:hover {
     letter-spacing: 2px;
 
     line-height: 1.8;
-
 }
 
-
 .hero h1 {
-
     position: relative;
 
     font-family: 'Cinzel', serif;
@@ -224,20 +160,14 @@ nav a:hover {
     margin: 20px 0;
 
     font-weight: 700;
-
 }
-
 
 .hero h1 span {
-
-    color: #d8b46a;
-
+    color: #ff8f8f;
 }
 
-
 .hero-text {
-
-    color: #c6b8d7;
+    color: #e2caca;
 
     font-size: 16px;
 
@@ -246,7 +176,6 @@ nav a:hover {
     margin: auto;
 
     line-height: 1.8;
-
 }
 
 
@@ -255,7 +184,6 @@ nav a:hover {
 ===================================================== */
 
 .calculator-section {
-
     display: flex;
 
     justify-content: center;
@@ -263,43 +191,31 @@ nav a:hover {
     padding: 30px 20px 80px;
 
     background:
-
         linear-gradient(
-
             180deg,
-
-            #17102d 0%,
-
-            #1e1336 100%
-
+            #120707 0%,
+            #241010 100%
         );
-
 }
 
-
 .calculator-card {
-
     width: 100%;
 
     max-width: 530px;
 
     background: #ffffff;
 
-    color: #302040;
+    color: #1a0808;
 
     border-radius: 18px;
 
     padding: 38px;
 
     box-shadow:
-
-        0 15px 60px #00000035;
-
+        0 15px 60px #00000055;
 }
 
-
 .card-heading {
-
     display: flex;
 
     align-items: center;
@@ -307,12 +223,9 @@ nav a:hover {
     gap: 18px;
 
     margin-bottom: 30px;
-
 }
 
-
 .moon-icon {
-
     display: flex;
 
     align-items: center;
@@ -327,38 +240,31 @@ nav a:hover {
 
     border-radius: 50%;
 
-    background: #f1e8ff;
+    background: #ffe5e5;
 
-    color: #6c3db5;
+    color: #a71919;
 
     font-size: 32px;
-
 }
 
-
 .card-heading h2 {
-
     font-family: 'Cinzel', serif;
 
     margin: 0 0 8px;
 
     font-size: 24px;
 
-    color: #302040;
-
+    color: #1a0808;
 }
 
-
 .card-heading p {
-
     margin: 0;
 
     font-size: 13px;
 
-    color: #8a7c96;
+    color: #806d6d;
 
     line-height: 1.5;
-
 }
 
 
@@ -367,36 +273,29 @@ nav a:hover {
 ===================================================== */
 
 .numerology-form {
-
     display: flex;
 
     flex-direction: column;
 
     gap: 10px;
-
 }
 
-
 .numerology-form label {
-
     font-size: 14px;
 
     font-weight: 600;
 
     margin-top: 10px;
 
-    color: #302040;
-
+    color: #1a0808;
 }
 
-
 .numerology-form input {
-
     width: 100%;
 
     padding: 16px;
 
-    border: 1px solid #e2dce8;
+    border: 1px solid #e3caca;
 
     border-radius: 9px;
 
@@ -404,32 +303,26 @@ nav a:hover {
 
     font-family: 'Inter', sans-serif;
 
-    color: #302040;
+    color: #1a0808;
 
     background: #ffffff;
 
     outline: none;
 
-    transition: border-color 0.3s ease,
-
-                box-shadow 0.3s ease;
-
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
-
 
 .numerology-form input::placeholder {
-
-    color: #a49aaa;
-
+    color: #a38d8d;
 }
 
-
 .numerology-form input:focus {
+    border-color: #c62828;
 
-    border-color: #8b5bc6;
-
-    box-shadow: 0 0 0 3px #8b5bc620;
-
+    box-shadow:
+        0 0 0 3px #c6282820;
 }
 
 
@@ -438,7 +331,6 @@ nav a:hover {
 ===================================================== */
 
 .numerology-form button {
-
     margin-top: 20px;
 
     padding: 17px;
@@ -448,15 +340,10 @@ nav a:hover {
     border-radius: 9px;
 
     background:
-
         linear-gradient(
-
             90deg,
-
-            #6c3db5,
-
-            #9255c5
-
+            #8b0000,
+            #c62828
         );
 
     color: #ffffff;
@@ -469,52 +356,40 @@ nav a:hover {
 
     cursor: pointer;
 
-    transition: transform 0.2s ease,
-
-                box-shadow 0.2s ease;
-
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
-
 .numerology-form button:hover {
-
-    background: #512b8d;
+    background: #6f0000;
 
     transform: translateY(-2px);
 
-    box-shadow: 0 5px 15px #6c3db540;
-
+    box-shadow:
+        0 5px 15px #8b000055;
 }
-
 
 .numerology-form button:active {
-
     transform: translateY(0);
-
 }
-
 
 .numerology-form button span {
-
     margin-left: 12px;
 
-    color: #f1d18b;
-
+    color: #ffd6d6;
 }
 
-
 .privacy-text {
-
     text-align: center;
 
     font-size: 11px;
 
-    color: #a49aaa;
+    color: #a38d8d;
 
     margin: 22px 0 0;
 
     line-height: 1.6;
-
 }
 
 
@@ -523,32 +398,32 @@ nav a:hover {
 ===================================================== */
 
 .report-section {
-
     text-align: center;
 
     padding: 65px 20px;
 
     background:
-
         linear-gradient(
-
             180deg,
-
-            #211536 0%,
-
-            #17102d 100%
-
+            #241010 0%,
+            #120707 100%
         );
 
-    border-top: 1px solid #3b2b52;
-
+    border-top: 1px solid #4a1717;
 }
 
+.report-logo {
+    display: none;
+}
+
+.report-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
 
 .report-section h2,
-
 .about-section h2 {
-
     font-family: 'Cinzel', serif;
 
     font-size: 32px;
@@ -556,23 +431,16 @@ nav a:hover {
     margin: 12px 0;
 
     line-height: 1.4;
-
 }
-
 
 .report-name {
-
-    color: #c7b9d6;
+    color: #e0caca;
 
     margin: 20px 0;
-
 }
 
-
 .report-name strong {
-
-    color: #d8b46a;
-
+    color: #ffaaaa;
 }
 
 
@@ -581,83 +449,73 @@ nav a:hover {
 ===================================================== */
 
 .numbers-grid {
-
     display: flex;
-        justify-content: center;
-        width: 100%;
-        margin: 35px auto 0;
 
+    justify-content: center;
+
+    width: 100%;
+
+    margin: 35px auto 0;
 }
-
 
 .number-card {
-
     width: 500px;
-        background: #302045;
-        text-align: center;
-        border: 1px solid #4c3862;
-        border-radius: 14px;
-        padding: 28px 30px;
-        transition: transform 0.3s ease,
-                    border-color 0.3s ease;
 
+    background: #1f0b0b;
+
+    text-align: center;
+
+    border: 1px solid #6b2424;
+
+    border-radius: 14px;
+
+    padding: 28px 30px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
 }
-
 
 .number-card:hover {
-
     transform: translateY(-5px);
 
-    border-color: #d8b46a;
-
+    border-color: #ff8f8f;
 }
-
 
 .number-icon {
-
-    color: #d8b46a;
+    color: #ffaaaa;
 
     font-size: 26px;
-
 }
 
-
 .number-card h3 {
-
     font-family: 'Cinzel', serif;
 
     font-size: 16px;
 
-    color: #f4e9d3;
+    color: #ffe2e2;
 
     line-height: 1.5;
-
 }
 
-
 .number {
-
     font-family: 'Cinzel', serif;
 
     font-size: 52px;
 
     font-weight: 700;
 
-    color: #d8b46a;
+    color: #ff8f8f;
 
     margin: 10px 0;
-
 }
 
-
 .number-card p {
-
-    color: #b9aacb;
+    color: #d1baba;
 
     font-size: 12px;
 
     line-height: 1.5;
-
 }
 
 
@@ -666,41 +524,43 @@ nav a:hover {
 ===================================================== */
 
 .report-details {
-
     max-width: 650px;
 
     margin: 50px auto 0;
 
     padding: 30px;
 
-    background: #302045;
+    background: #1f0b0b;
 
-    border: 1px solid #4c3862;
+    border: 1px solid #6b2424;
 
     border-radius: 14px;
-
 }
 
-
 .report-details h3 {
-
     font-family: 'Cinzel', serif;
 
     font-size: 22px;
 
-    color: #f4e9d3;
-
+    color: #ffe2e2;
 }
 
+.report-details h4 {
+    color: #ffaaaa;
+
+    font-family: 'Cinzel', serif;
+
+    margin-top: 25px;
+
+    margin-bottom: 8px;
+}
 
 .report-details p {
-
-    color: #c7b9d6;
+    color: #d9c1c1;
 
     font-size: 14px;
 
     line-height: 1.8;
-
 }
 
 
@@ -709,18 +569,17 @@ nav a:hover {
 ===================================================== */
 
 .print-button {
-
     margin-top: 15px;
 
     padding: 13px 24px;
 
-    border: 1px solid #d8b46a;
+    border: 1px solid #ff8f8f;
 
     border-radius: 8px;
 
     background: transparent;
 
-    color: #d8b46a;
+    color: #ffaaaa;
 
     font-size: 14px;
 
@@ -728,19 +587,15 @@ nav a:hover {
 
     cursor: pointer;
 
-    transition: background 0.3s ease,
-
-                color 0.3s ease;
-
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
 }
 
-
 .print-button:hover {
+    background: #ff8f8f;
 
-    background: #d8b46a;
-
-    color: #211536;
-
+    color: #1a0808;
 }
 
 
@@ -749,7 +604,6 @@ nav a:hover {
 ===================================================== */
 
 .about-section {
-
     text-align: center;
 
     padding: 75px 20px;
@@ -758,26 +612,19 @@ nav a:hover {
 
     margin: auto;
 
-    background: #17102d;
-
+    background: #120707;
 }
-
 
 .about-section h2 {
-
     color: #ffffff;
-
 }
 
-
 .about-section p:not(.eyebrow) {
-
-    color: #c7b9d6;
+    color: #d9c1c1;
 
     line-height: 1.8;
 
     font-size: 15px;
-
 }
 
 
@@ -786,19 +633,17 @@ nav a:hover {
 ===================================================== */
 
 footer {
-
     text-align: center;
 
     padding: 25px;
 
-    border-top: 1px solid #3b2b52;
+    border-top: 1px solid #4a1717;
 
-    color: #9c8dab;
+    color: #a98d8d;
 
     font-size: 12px;
 
-    background: #17102d;
-
+    background: #120707;
 }
 
 
@@ -808,139 +653,96 @@ footer {
 
 @media (max-width: 700px) {
 
-
     .navbar {
-
         flex-direction: column;
 
         gap: 18px;
 
         padding: 20px;
-
     }
-
 
     .logo {
-
         font-size: 15px;
-
     }
 
-
     nav {
-
         gap: 18px;
 
         flex-wrap: wrap;
 
         justify-content: center;
-
     }
-
 
     nav a {
-
         font-size: 13px;
-
     }
-
 
     .hero {
-
         padding: 45px 20px 35px;
-
     }
-
 
     .hero h1 {
-
         font-size: 34px;
-
     }
-
 
     .hero-text {
-
         font-size: 14px;
-
     }
-
 
     .calculator-section {
-
         padding: 25px 15px 60px;
-
     }
-
 
     .calculator-card {
-
         padding: 25px 20px;
-
     }
-
 
     .card-heading {
-
         gap: 12px;
-
     }
 
-
     .moon-icon {
-
         width: 48px;
 
         height: 48px;
 
         font-size: 27px;
-
     }
-
 
     .card-heading h2 {
-
         font-size: 20px;
-
     }
-
 
     .numbers-grid {
+        display: flex;
 
-        grid-template-columns: 1fr;
+        flex-direction: column;
 
-        max-width: 400px;
+        width: 100%;
+
+        max-width: 100%;
+
         justify-content: center;
+
         align-items: center;
-
     }
-
 
     .number-card {
+        width: 100%;
+
+        max-width: 500px;
 
         padding: 25px;
-        justify-content: center;
-        align-items: center;
-
     }
-
 
     .report-section h2,
-
     .about-section h2 {
-
         font-size: 25px;
-
     }
-
 
     .report-details {
-
         padding: 22px 18px;
-
     }
-
-
 }
 
 
@@ -950,35 +752,22 @@ footer {
 
 @media print {
 
-
     body {
-
         background: white;
 
         color: black;
-
     }
-
 
     .navbar,
-
     .hero,
-
     .calculator-section,
-
     .about-section,
-
     footer,
-
     .print-button {
-
         display: none !important;
-
     }
 
-
     .report-section {
-
         display: block !important;
 
         background: white;
@@ -988,54 +777,45 @@ footer {
         border: none;
 
         padding: 20px;
-
     }
 
+    .report-logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .report-logo img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
 
     .report-section h2,
-
     .report-section h3 {
-
         color: black;
-
     }
-
 
     .report-name,
-
     .report-details p {
-
         color: black;
-
     }
 
-
     .number-card,
-
     .report-details {
-
         background: white;
 
         border: 1px solid #cccccc;
 
         color: black;
-
     }
-
 
     .number-card h3,
-
     .number-card p {
-
         color: black;
-
     }
-
 
     .number {
-
         color: black;
-
     }
-
 }

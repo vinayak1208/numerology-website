@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="462b8aca-4b3a-46f3-947f-f8225cc05e44" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/destiny-numbers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Numerology/model/NumerologyResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Numerology/model/NumerologyResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Numerology/service/NumerologyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Numerology/service/NumerologyService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/numerology.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/numerology.html" afterDir="false" />
     </list>
@@ -77,11 +76,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/vinayak/Downloads/Numerology/src/main/resources"
+    "last_opened_file_path": "/Users/vinayak/Downloads/Numerology/src/main/resources/static/images"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/images" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -94,7 +94,7 @@
       <command value="./gradlew build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Numerology [build]">
+  <component name="RunManager" selected="Application.NumerologyApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Numerology.main" />
