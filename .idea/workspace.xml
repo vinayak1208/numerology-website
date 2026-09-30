@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="462b8aca-4b3a-46f3-947f-f8225cc05e44" name="Changes" comment="">
+    <list default="true" id="462b8aca-4b3a-46f3-947f-f8225cc05e44" name="Changes" comment="contact added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/destiny-numbers.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/destiny-numbers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/numerology.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/numerology.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.NumerologyApplication.executor&quot;: &quot;Run&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Gradle.Build Numerology.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Numerology [:Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Numerology [:NumerologyApplication.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Numerology [build].executor&quot;: &quot;Run&quot;,
@@ -187,9 +190,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NumerologyApplication" />
         <item itemvalue="Gradle.Numerology [build]" />
         <item itemvalue="Gradle.Numerology [clean build]" />
-        <item itemvalue="Application.NumerologyApplication" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.Numerology [dependencies]" />
       </list>
@@ -213,5 +216,10 @@
       <updated>1789626834781</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Number logic addition" />
+    <MESSAGE value="contact added" />
+    <option name="LAST_COMMIT_MESSAGE" value="contact added" />
   </component>
 </project>
