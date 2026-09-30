@@ -627,6 +627,48 @@ nav a:hover {
     font-size: 15px;
 }
 
+/* =====================================================
+   CONTACT SECTION
+===================================================== */
+
+.contact-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: #1a0909;
+    border-top: 1px solid #4a1717;
+}
+
+.contact-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.contact-section > p:not(.eyebrow) {
+    color: #d9c1c1;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-details a {
+    color: #ffaaaa;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #ffffff;
+}
+
 
 /* =====================================================
    FOOTER
@@ -646,6 +688,32 @@ footer {
     background: #120707;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.15);
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
 
 /* =====================================================
    MOBILE RESPONSIVE DESIGN
@@ -784,6 +852,7 @@ footer {
         text-align: center;
         margin-bottom: 20px;
     }
+
 
     .report-logo img {
         width: 100px;
