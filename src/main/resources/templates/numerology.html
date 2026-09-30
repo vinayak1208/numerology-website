@@ -23,11 +23,14 @@
 <header class="navbar">
 
     <div class="logo">
+
         <img src="/images/logo.png"
              alt="Abhishek Numerology Logo">
 
         <span>ABHISHEK NUMEROLOGY</span>
+
     </div>
+
 
     <nav>
 
@@ -74,7 +77,6 @@
         <p class="hero-text">
 
             Explore the mystical world of numerology
-
             and discover the hidden meaning behind your name.
 
         </p>
@@ -88,8 +90,6 @@
 
         <div class="calculator-card">
 
-            <!-- Card Header -->
-
             <div class="card-heading">
 
                 <div class="moon-icon">
@@ -98,7 +98,9 @@
 
                 <div>
 
-                    <h2>Name Numerology</h2>
+                    <h2>
+                        Name Numerology
+                    </h2>
 
                     <p>
                         Enter your name to reveal
@@ -110,7 +112,7 @@
             </div>
 
 
-            <!-- Calculator Form -->
+            <!-- ================= CALCULATOR FORM ================= -->
 
             <form action="/calculate"
                   method="post"
@@ -159,10 +161,14 @@
              id="report"
              th:if="${result != null}">
 
+        <!-- Logo appears only when printing -->
         <div class="report-logo">
+
             <img src="/images/logo.png"
                  alt="Abhishek Numerology">
+
         </div>
+
 
         <p class="eyebrow">
             ✦ YOUR REPORT ✦
@@ -194,11 +200,9 @@
                     ☀
                 </div>
 
-
                 <h3>
                     Name Number
                 </h3>
-
 
                 <div class="number"
                      th:text="${result.destinyNumber}">
@@ -218,7 +222,7 @@
             </h3>
 
 
-            <!-- Ruling Planet -->
+            <!-- RULING PLANET -->
 
             <div class="report-item">
 
@@ -232,7 +236,7 @@
             </div>
 
 
-            <!-- Contributing Planets -->
+            <!-- CONTRIBUTING PLANETS -->
 
             <div class="report-item">
 
@@ -246,7 +250,7 @@
             </div>
 
 
-            <!-- Description -->
+            <!-- DESCRIPTION -->
 
             <div class="report-item">
 
@@ -260,7 +264,7 @@
             </div>
 
 
-            <!-- Business Description -->
+            <!-- BUSINESS DESCRIPTION -->
 
             <div class="report-item">
 
@@ -274,7 +278,7 @@
             </div>
 
 
-            <!-- Print -->
+            <!-- PRINT -->
 
             <button
                     type="button"
@@ -286,7 +290,6 @@
             </button>
 
         </div>
-
 
     </section>
 
@@ -318,37 +321,52 @@
 
     </section>
 
-    <section class="contact-section" id="contact">
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-section"
+             id="contact">
 
         <p class="eyebrow">
             ✦ GET IN TOUCH ✦
         </p>
 
+
         <h2>
             Contact Us
         </h2>
+
 
         <p>
             Have questions about your numerology report?
             Get in touch with us.
         </p>
 
+
         <div class="contact-details">
 
+            <!-- PHONE -->
+
             <a href="tel:+917491925373">
+
                 📞 +91 7491925373
+
             </a>
+
+
+            <!-- WHATSAPP -->
 
             <a href="https://wa.me/message/QPVCRAGOTVC6H1"
                target="_blank"
                rel="noopener noreferrer">
+
                 💬 WhatsApp Us
+
             </a>
 
         </div>
 
     </section>
-
 
 </main>
 
@@ -359,39 +377,59 @@
 
     <div class="social-links">
 
-        <!-- WhatsApp -->
+
+        <!-- ================= WHATSAPP ================= -->
+
         <a href="https://wa.me/message/QPVCRAGOTVC6H1"
            target="_blank"
            rel="noopener noreferrer"
            aria-label="WhatsApp">
-           <img src="/images/whatsapp.png" alt="WhatsApp">
+
+            <img src="/images/whatsapp.png"
+                 alt="WhatsApp">
+
         </a>
 
-        <!-- Instagram -->
+
+        <!-- ================= INSTAGRAM ================= -->
+
         <a href="https://www.instagram.com/officialdivineoccultist?stkn=MXd2NTI0azA2NXkycg%3D%3D&utm_source=qr"
            target="_blank"
            rel="noopener noreferrer"
            aria-label="Instagram">
-           <img src="/images/instagram.png" alt="Instagram">
+
+            <img src="/images/instagram.png"
+                 alt="Instagram">
+
         </a>
 
-        <!-- YouTube -->
+
+        <!-- ================= YOUTUBE ================= -->
+
         <a href="https://youtube.com/@vastuabhishekagarwal?si=qKIFuWaJT_ny-D65"
            target="_blank"
            rel="noopener noreferrer"
            aria-label="YouTube">
-           <img src="/images/youtube.png" alt="YouTube">
+
+            <img src="/images/youtube.png"
+                 alt="YouTube">
+
         </a>
 
-        <!-- Contact -->
+
+        <!-- ================= CONTACT ================= -->
+
         <a href="tel:+917491925373"
            aria-label="Contact">
+
             <img class="phone-icon"
                  src="/images/phone.png"
                  alt="Contact">
+
         </a>
 
     </div>
+
 
     <p>
         © 2026 Vinayak Kedia (Developer)
